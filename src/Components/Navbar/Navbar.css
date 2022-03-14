@@ -1,0 +1,12 @@
+.nav-glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255, 187, 126);
+    border-radius: 12px;
+    color: #ffffff !important;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
+@media only screen and (max-width:768px) {
+  .remove-name {display: none;}
+}
