@@ -2,7 +2,6 @@ import React from "react";
 import Teamdata from "./TeamData";
 
 const Teamcard = () => {
-	console.log(Teamdata);
 	return (
 		<div className="container py-5">
 			<div className="row mb-4">
@@ -29,22 +28,14 @@ const Teamcard = () => {
 									{item.Designation}
 								</span>
 								<ul className="social mb-0 list-inline mt-3">
+									
 									<li className="list-inline-item">
-										<a
-											href="http://www.linkedin.com/in/yogita-ajgar-847b1071"
-											className="social-link"
-										>
-											<i class="fa-brands fa-linkedin"></i>
-										</a>
-									</li>
+									<a href={item.Linkedin} className="social-link"><i class="fa-brands fa-linkedin"></i></a>
+									</li> 
+									
 									<li className="list-inline-item">
-										<a
-											href="http://www.linkedin.com/in/yogita-ajgar-847b1071"
-											className="social-link"
-										>
-											<i class="fa-brands fa-instagram"></i>
-										</a>
-									</li>
+									<a href={item.Instagram} className="social-link"><i class="fa-brands fa-instagram"></i></a>
+									</li> 
 								</ul>
 							</div>
 						</div>
